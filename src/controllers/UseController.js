@@ -20,7 +20,6 @@ module.exports = {
     const { id } = request.params;
 
     const user = users.find((user) => user.id === Number(id))
-    console.log(user)
 
     if (!user) {
       response.writeHead(404, { 'Content-Type': 'application-json' })
